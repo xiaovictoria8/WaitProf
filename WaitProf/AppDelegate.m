@@ -28,20 +28,6 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
-    // Create new player object
-    PFObject *player = [PFObject objectWithClassName:@"Player"];
-    [player setObject:@"Jack" forKey:@"Name"];
-    [player setObject:[NSNumber numberWithInt:840] forKey:@"Score"];
-    [player saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (succeeded){
-            NSLog(@"Object Uploaded!");
-        }
-        else {
-            NSString *errorString = [[error userInfo] objectForKey:@"error"];
-            NSLog(@"Error: %@", errorString);
-        }
-    }];
-    
     // Override point for customization after application launch.
     return YES;
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445286D71C54963400D46788 /* ProfPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445286D61C54963400D46788 /* ProfPageViewController.m */; };
+		445286DA1C54B50500D46788 /* StudentCoursesControllerTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445286D91C54B50500D46788 /* StudentCoursesControllerTableTableViewController.m */; };
+		445286DF1C54BC5B00D46788 /* wpbutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 445286DE1C54BC5B00D46788 /* wpbutton1.png */; };
+		445286E51C54D24E00D46788 /* StudentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445286E41C54D24E00D46788 /* StudentPageViewController.m */; };
+		445286E91C54E2D500D46788 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 445286E81C54E2D500D46788 /* logo1.png */; };
 		44B83AA01C53571D0085D61A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83A9F1C53571D0085D61A /* main.m */; };
 		44B83AA31C53571D0085D61A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83AA21C53571D0085D61A /* AppDelegate.m */; };
 		44B83AA61C53571D0085D61A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83AA51C53571D0085D61A /* ViewController.m */; };
@@ -32,7 +37,9 @@
 		44B83AFF1C53677B0085D61A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B83AFC1C53677B0085D61A /* ParseUI.framework */; };
 		44B83B051C5403370085D61A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83B041C5403370085D61A /* RegisterViewController.m */; };
 		44B83B0C1C54314A0085D61A /* CoursesControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83B0B1C54314A0085D61A /* CoursesControllerTableViewController.m */; };
-		44B83B0F1C544D6B0085D61A /* AddCourseControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83B0E1C544D6B0085D61A /* AddCourseControllerViewController.m */; };
+		44B83B151C5455E10085D61A /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83B141C5455E10085D61A /* AddCourseViewController.m */; };
+		44B83B201C5476600085D61A /* courseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B83B1F1C5476600085D61A /* courseCell.xib */; };
+		44B83B261C547BB80085D61A /* courseCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B83B251C547BB80085D61A /* courseCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		445286D51C54963400D46788 /* ProfPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfPageViewController.h; sourceTree = "<group>"; };
+		445286D61C54963400D46788 /* ProfPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfPageViewController.m; sourceTree = "<group>"; };
+		445286D81C54B50500D46788 /* StudentCoursesControllerTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentCoursesControllerTableTableViewController.h; sourceTree = "<group>"; };
+		445286D91C54B50500D46788 /* StudentCoursesControllerTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentCoursesControllerTableTableViewController.m; sourceTree = "<group>"; };
+		445286DE1C54BC5B00D46788 /* wpbutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wpbutton1.png; path = ../../../../Desktop/wpbutton1.png; sourceTree = "<group>"; };
+		445286E31C54D24E00D46788 /* StudentPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentPageViewController.h; sourceTree = "<group>"; };
+		445286E41C54D24E00D46788 /* StudentPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentPageViewController.m; sourceTree = "<group>"; };
+		445286E81C54E2D500D46788 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = ../../../../Desktop/logo1.png; sourceTree = "<group>"; };
 		44B83A9B1C53571D0085D61A /* WaitProf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitProf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B83A9F1C53571D0085D61A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44B83AA11C53571D0085D61A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,8 +104,11 @@
 		44B83B041C5403370085D61A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		44B83B0A1C54314A0085D61A /* CoursesControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesControllerTableViewController.h; sourceTree = "<group>"; };
 		44B83B0B1C54314A0085D61A /* CoursesControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesControllerTableViewController.m; sourceTree = "<group>"; };
-		44B83B0D1C544D6B0085D61A /* AddCourseControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseControllerViewController.h; sourceTree = "<group>"; };
-		44B83B0E1C544D6B0085D61A /* AddCourseControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseControllerViewController.m; sourceTree = "<group>"; };
+		44B83B131C5455E10085D61A /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		44B83B141C5455E10085D61A /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		44B83B1F1C5476600085D61A /* courseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = courseCell.xib; sourceTree = "<group>"; };
+		44B83B241C547BB80085D61A /* courseCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = courseCellTableViewCell.h; sourceTree = "<group>"; };
+		44B83B251C547BB80085D61A /* courseCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = courseCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445286DB1C54BB8200D46788 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				445286E81C54E2D500D46788 /* logo1.png */,
+				445286DE1C54BC5B00D46788 /* wpbutton1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		44B83A921C53571D0085D61A = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +183,7 @@
 		44B83A9D1C53571D0085D61A /* WaitProf */ = {
 			isa = PBXGroup;
 			children = (
+				445286DB1C54BB8200D46788 /* Images */,
 				44B83B031C5403080085D61A /* RegisterViewController.h */,
 				44B83B041C5403370085D61A /* RegisterViewController.m */,
 				44B83AA11C53571D0085D61A /* AppDelegate.h */,
@@ -169,9 +197,18 @@
 				44B83AAA1C53571D0085D61A /* WaitProf.xcdatamodeld */,
 				44B83B0A1C54314A0085D61A /* CoursesControllerTableViewController.h */,
 				44B83B0B1C54314A0085D61A /* CoursesControllerTableViewController.m */,
-				44B83B0D1C544D6B0085D61A /* AddCourseControllerViewController.h */,
-				44B83B0E1C544D6B0085D61A /* AddCourseControllerViewController.m */,
 				44B83A9E1C53571D0085D61A /* Supporting Files */,
+				44B83B131C5455E10085D61A /* AddCourseViewController.h */,
+				44B83B141C5455E10085D61A /* AddCourseViewController.m */,
+				44B83B1F1C5476600085D61A /* courseCell.xib */,
+				44B83B241C547BB80085D61A /* courseCellTableViewCell.h */,
+				44B83B251C547BB80085D61A /* courseCellTableViewCell.m */,
+				445286D51C54963400D46788 /* ProfPageViewController.h */,
+				445286D61C54963400D46788 /* ProfPageViewController.m */,
+				445286D91C54B50500D46788 /* StudentCoursesControllerTableTableViewController.m */,
+				445286D81C54B50500D46788 /* StudentCoursesControllerTableTableViewController.h */,
+				445286E31C54D24E00D46788 /* StudentPageViewController.h */,
+				445286E41C54D24E00D46788 /* StudentPageViewController.m */,
 			);
 			path = WaitProf;
 			sourceTree = "<group>";
@@ -328,8 +365,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B83B201C5476600085D61A /* courseCell.xib in Resources */,
 				44B83AB11C53571D0085D61A /* LaunchScreen.storyboard in Resources */,
 				44B83AAE1C53571D0085D61A /* Assets.xcassets in Resources */,
+				445286DF1C54BC5B00D46788 /* wpbutton1.png in Resources */,
+				445286E91C54E2D500D46788 /* logo1.png in Resources */,
 				44B83AA91C53571D0085D61A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,11 +395,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B83B261C547BB80085D61A /* courseCellTableViewCell.m in Sources */,
+				445286DA1C54B50500D46788 /* StudentCoursesControllerTableTableViewController.m in Sources */,
 				44B83AA61C53571D0085D61A /* ViewController.m in Sources */,
-				44B83B0F1C544D6B0085D61A /* AddCourseControllerViewController.m in Sources */,
+				445286D71C54963400D46788 /* ProfPageViewController.m in Sources */,
 				44B83B051C5403370085D61A /* RegisterViewController.m in Sources */,
+				44B83B151C5455E10085D61A /* AddCourseViewController.m in Sources */,
 				44B83B0C1C54314A0085D61A /* CoursesControllerTableViewController.m in Sources */,
 				44B83AAC1C53571D0085D61A /* WaitProf.xcdatamodeld in Sources */,
+				445286E51C54D24E00D46788 /* StudentPageViewController.m in Sources */,
 				44B83AA31C53571D0085D61A /* AppDelegate.m in Sources */,
 				44B83AA01C53571D0085D61A /* main.m in Sources */,
 			);

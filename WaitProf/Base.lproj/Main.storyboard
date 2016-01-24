@@ -44,19 +44,19 @@
                                 <color key="backgroundColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" id="NRJ-or-1Dn">
-                                <rect key="frame" x="42" y="85" width="290" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="esW-GK-GJ8">
                                 <rect key="frame" x="42" y="125" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Are you a student or a professor?" textAlignment="natural" minimumFontSize="17" id="AD9-FF-D0V">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="esW-GK-GJ8">
                                 <rect key="frame" x="42" y="165" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Are you a student or a professor?" textAlignment="natural" minimumFontSize="17" id="AD9-FF-D0V">
+                                <rect key="frame" x="42" y="205" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -68,7 +68,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o3C-eI-rwH">
-                                <rect key="frame" x="161" y="200" width="52" height="30"/>
+                                <rect key="frame" x="161" y="245" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,12 +78,19 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="ZHZ-EW-Hmx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" id="IJy-ZC-06L">
+                                <rect key="frame" x="42" y="85" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="L0r-IB-SEM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="name" destination="IJy-ZC-06L" id="Z7w-81-Bb0"/>
                         <outlet property="password" destination="esW-GK-GJ8" id="rUJ-Yq-6G5"/>
                         <outlet property="picker" destination="DeX-X9-xia" id="5vy-6L-iuV"/>
                         <outlet property="textField" destination="AD9-FF-D0V" id="4Rx-6c-3IL"/>
@@ -103,13 +110,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" id="SS8-YV-cQe">
-                                <rect key="frame" x="68" y="340" width="238" height="30"/>
+                                <rect key="frame" x="68" y="320" width="238" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="eFp-dU-mcp">
-                                <rect key="frame" x="68" y="380" width="238" height="30"/>
+                                <rect key="frame" x="68" y="360" width="238" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -132,15 +139,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5LY-qT-sfV">
-                                <rect key="frame" x="166" y="418" width="42" height="30"/>
+                                <rect key="frame" x="166" y="400" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In">
+                                <state key="normal" title="Log in">
                                     <color key="titleColor" red="1" green="0.13115111341945662" blue="0.44784859294941459" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bCp-lH-kk5"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1.png" id="iJx-a1-OfD">
+                                <rect key="frame" x="57" y="100" width="260" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -154,26 +165,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="275"/>
+            <point key="canvasLocation" x="131.5" y="274.5"/>
         </scene>
         <!--My courses (student)-->
         <scene sceneID="CjP-rT-9x7">
             <objects>
-                <tableViewController id="6fy-LJ-Q1A" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kcW-bj-7v3">
+                <tableViewController id="6fy-LJ-Q1A" customClass="StudentCoursesControllerTableTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="kcW-bj-7v3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="courseCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="77" id="moj-tq-TGw">
+                                <rect key="frame" x="0.0" y="92" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="moj-tq-TGw" id="tcd-6P-izO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="6fy-LJ-Q1A" id="UpO-ys-bTw"/>
                             <outlet property="delegate" destination="6fy-LJ-Q1A" id="HhW-pu-Fvh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My courses (student)" id="arF-pl-C7O"/>
+                    <navigationItem key="navigationItem" title="My courses (student)" id="arF-pl-C7O">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="x8d-Aa-B1w">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fia-7f-QdQ">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="6fy-LJ-Q1A" eventType="touchUpInside" id="xeg-h0-xYT"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="aFn-VY-Rzl"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="j6M-0B-45o" kind="push" identifier="studSegue" id="tBX-If-pxo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dC-oe-3Ws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1097.5" y="498.5"/>
+        </scene>
+        <!--Stud Page View Controller-->
+        <scene sceneID="EUV-8z-b9H">
+            <objects>
+                <viewController id="drO-5B-nGE" customClass="StudPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQT-uC-lQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FxU-6b-8qD">
+                                <rect key="frame" x="0.0" y="154" width="360" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="wpbutton1.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="drO-5B-nGE" eventType="touchUpInside" id="Mgg-9l-2uk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IL4-cU-MZ8"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="button" destination="FxU-6b-8qD" id="HCG-Rr-ap3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJ5-Xg-ZXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568.5" y="498.5"/>
+        </scene>
+        <!--Student Page View Controller-->
+        <scene sceneID="mBO-WR-Pge">
+            <objects>
+                <viewController id="j6M-0B-45o" customClass="StudentPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p7M-Lj-DMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c3Q-pd-ejN">
+                                <rect key="frame" x="0.0" y="154" width="360" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="wpbutton1.png"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="j6M-0B-45o" eventType="touchUpInside" id="ERC-TY-t8e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kna-AH-3Ma"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxG-qY-qhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097.5" y="1273.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SeO-Bj-gaq">
@@ -195,13 +287,35 @@
         <!--Add Course Controller-->
         <scene sceneID="Pih-Wy-0yE">
             <objects>
-                <viewController title="Add Course Controller" id="peY-bo-R5c" customClass="AddCourseControllerViewController" sceneMemberID="viewController">
+                <viewController title="Add Course Controller" id="peY-bo-R5c" customClass="AddCourseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KqG-lG-M45">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" id="AiL-Ct-qTZ">
-                                <rect key="frame" x="68" y="333" width="238" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course name" textAlignment="natural" minimumFontSize="17" id="UrR-FO-UsW">
+                                <rect key="frame" x="42" y="125" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course code" textAlignment="natural" minimumFontSize="17" id="AiL-Ct-qTZ">
+                                <rect key="frame" x="42" y="85" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nMu-RY-h45">
+                                <rect key="frame" x="108" y="205" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create course">
+                                    <color key="titleColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createButtonPressed:" destination="peY-bo-R5c" eventType="touchUpInside" id="4rw-QV-kiz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Professor name" textAlignment="natural" minimumFontSize="17" id="lk6-ai-VH1">
+                                <rect key="frame" x="42" y="165" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -211,19 +325,36 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add course" id="C30-vE-Hye"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="courseCode" destination="AiL-Ct-qTZ" id="IOO-4g-dsF"/>
+                        <outlet property="courseName" destination="UrR-FO-UsW" id="Wfk-w9-CX2"/>
+                        <outlet property="profName" destination="lk6-ai-VH1" id="xbe-2v-l58"/>
+                        <segue destination="gHY-VI-mZ4" kind="unwind" identifier="unwind1" unwindAction="prepareForUnwind:" id="zqV-ao-KVy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zW8-om-Cav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gHY-VI-mZ4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1572.5" y="-908.5"/>
+            <point key="canvasLocation" x="1097.5" y="-1052.5"/>
         </scene>
         <!--Courses View Controller-->
         <scene sceneID="JcK-J2-qaB">
             <objects>
-                <tableViewController title="Courses View Controller" id="yrb-JB-gc0" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="rKd-tW-1vI" customClass="CoursesViewController">
+                <tableViewController title="Courses View Controller" id="yrb-JB-gc0" customClass="CoursesControllerTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="rKd-tW-1vI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FP7-O5-3eN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FP7-O5-3eN" id="ciI-8d-iYy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <sections/>
                         <connections>
                             <outlet property="dataSource" destination="yrb-JB-gc0" id="zTa-V5-cmN"/>
@@ -231,17 +362,94 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My courses (professor)" id="uuw-KE-HPt">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="3cn-un-Ilr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vzC-jl-J4Z">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="yrb-JB-gc0" eventType="touchUpInside" id="zYf-bR-33P"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="Kef-1V-z5P"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fdV-Cl-f60">
                             <connections>
-                                <segue destination="peY-bo-R5c" kind="push" id="O2J-Rb-w0j"/>
+                                <segue destination="peY-bo-R5c" kind="push" id="Y8m-xj-h0G"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="BQc-4e-0yR" kind="push" identifier="profPageSegue" id="5zs-Vh-YYJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AcS-Gf-blu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1097.5" y="-260.5"/>
+        </scene>
+        <!--Prof Page View Controller-->
+        <scene sceneID="Lfr-IR-L32">
+            <objects>
+                <viewController id="BQc-4e-0yR" customClass="ProfPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3hC-sm-oj2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="students are" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mqY-d6-yUu">
+                                <rect key="frame" x="13" y="297" width="348" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="confused" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vm6-rh-cmK">
+                                <rect key="frame" x="74" y="388" width="229" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g9N-se-x9A">
+                                <rect key="frame" x="-6" y="145" width="388" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="190"/>
+                                <color key="textColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Za-Ds-A2i">
+                                <rect key="frame" x="108" y="610" width="161" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click to reset counter">
+                                    <color key="titleColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshPressed:" destination="BQc-4e-0yR" eventType="touchUpInside" id="0JL-89-Brd"/>
+                                    <action selector="resetPressed:" destination="BQc-4e-0yR" eventType="touchUpInside" id="s8l-pb-PUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fay-sL-t2b">
+                                <rect key="frame" x="107" y="583" width="161" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click to refresh counter">
+                                    <color key="titleColor" red="1" green="0.13115111339999999" blue="0.44784859290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshPressed:" destination="BQc-4e-0yR" eventType="touchUpInside" id="gh2-K4-1zQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LUo-0k-wQn"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="numLabel" destination="g9N-se-x9A" id="zoG-Co-ZFg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHf-7i-aZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568.5" y="-260.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="euB-er-TUQ">
@@ -263,7 +471,11 @@
             <point key="canvasLocation" x="626.5" y="-260.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo1.png" width="2546" height="2016"/>
+        <image name="wpbutton1.png" width="1200" height="1200"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gNK-zH-z0L"/>
+        <segue reference="Kef-1V-z5P"/>
     </inferredMetricsTieBreakers>
 </document>

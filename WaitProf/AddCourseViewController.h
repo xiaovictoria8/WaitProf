@@ -1,5 +1,5 @@
 //
-//  AddCourseControllerViewController.h
+//  AddCourseViewController.h
 //  WaitProf
 //
 //  Created by Victoria Xiao on 2016-01-23.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddCourseControllerViewController : UIViewController
+
+@interface AddCourseViewController : UIViewController
 
 @end

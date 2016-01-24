@@ -1,20 +1,25 @@
 //
-//  CoursesControllerTableViewController.m
+//  StudentCoursesControllerTableTableViewController.m
 //  WaitProf
 //
-//  Created by Victoria Xiao on 2016-01-23.
+//  Created by Victoria Xiao on 2016-01-24.
 //  Copyright © 2016 My Majesty Productions. All rights reserved.
 //
 
-#import "CoursesControllerTableViewController.h"
+#import "StudentCoursesControllerTableTableViewController.h"
 #import "courseCellTableViewCell.h"
 #import <Parse/Parse.h>
 
-@interface CoursesControllerTableViewController ()
+@interface StudentCoursesControllerTableTableViewController ()
 
 @end
 
-@implementation CoursesControllerTableViewController
+@implementation StudentCoursesControllerTableTableViewController
+
+- (IBAction)logoutPressed:(id)sender {
+    [PFUser logOut];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,12 +35,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)logoutPressed:(id)sender {
-    [PFUser logOut];
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
-#pragma mark 
+#pragma mark
 -(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
 }
 
@@ -43,7 +44,6 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
@@ -66,34 +66,38 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:
-    (NSIndexPath *)indexPath object:(PFObject *)object{
+(NSIndexPath *)indexPath object:(PFObject *)object{
+    
     CourseCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"courseCell"];
     if (!cell) {
         [tableView registerNib:[UINib nibWithNibName:@"courseCell" bundle:nil] forCellReuseIdentifier:@"courseCell"];
         cell = [tableView dequeueReusableCellWithIdentifier:@"courseCell"];
     }
+    
     //Configure custom cell
     cell.courseCodeLabel.text = [object objectForKey:@"courseCode"];
     cell.courseNameLabel.text = [object objectForKey:@"courseName"];
     cell.profNameLabel.text = [object objectForKey:@"profName"];
+    
     return cell;
 }
 
 #pragma mark
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"profPageSegue"]) {
+    if ([[segue identifier] isEqualToString:@"studSegue"]) {
         NSLog(@"prepareForSegueCalled");
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *object = [self.objects objectAtIndex:indexPath.row];
         NSString *courseString = [object objectForKey:@"courseCode"];
-    
-        [[NSUserDefaults standardUserDefaults] setObject:courseString forKey:@"key"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:courseString forKey:@"key2"];
     }
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"profPageSegue" sender:self];
-}
+    [self performSegueWithIdentifier:@"studSegue" sender:self];
+
+    }
 
 @end
 

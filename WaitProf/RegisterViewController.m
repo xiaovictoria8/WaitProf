@@ -14,6 +14,7 @@
 //Fields for username and password
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *name;
 
 
 //Fields for the student/prof picker thing
@@ -69,6 +70,7 @@
     PFUser *user = [PFUser user];
     user.username = self.username.text;
     user.password = self.password.text;
+    [user setObject:self.name.text forKey:@"Name"];
     [user setObject:self.textField.text forKey:@"Type"];
     
     //checking to make sure signup worked

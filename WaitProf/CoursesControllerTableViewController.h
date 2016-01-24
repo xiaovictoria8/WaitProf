@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 
-@interface CoursesControllerTableViewController : UITableViewController
+
+@interface CoursesControllerTableViewController : PFQueryTableViewController
 
 @end
